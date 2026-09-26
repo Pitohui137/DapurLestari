@@ -75,15 +75,13 @@
             </div>
             <div class="relative z-10">
                 <h2 class="text-3xl md:text-4xl font-black mb-3 drop-shadow-md" id="hero-title">Citarasa & Cerita</h2>
-                <p class="text-orange-50 text-sm md:text-base max-w-lg mx-auto mb-6 font-medium" id="hero-subtitle">Dari dapur penuh rempah hingga dekorasi penuh warna. <span class="block mt-1 font-bold text-yellow-200">Solusi Katering & Wedding Lengkap.</span></p>
+                <p class="text-orange-50 text-sm md:text-base max-w-lg mx-auto mb-6 font-medium" id="hero-subtitle">Dari dapur penuh rempah hingga kue penuh cita rasa. <span class="block mt-1 font-bold text-yellow-200">Solusi Pesanan Cathering, Kue & Jajanan Pasar Jumlah Besar.</span></p>
                 
                 <div class="flex justify-center gap-3 mb-6 flex-wrap">
-                    <a href="https://instagram.com/dapur.sedayu" target="_blank" class="flex items-center space-x-2 bg-white text-orange-600 px-4 py-2 rounded-full text-xs font-bold hover:bg-orange-50 transition shadow-sm border-b-2 border-orange-200">
-                        <i data-lucide="instagram" class="w-3 h-3"></i> <span>@dapur.sedayu</span>
+                    <a href="https://www.instagram.com/lizlestari?stkn=Z3M4bzduMWNseTZ3" target="_blank" class="flex items-center space-x-2 bg-white text-orange-600 px-4 py-2 rounded-full text-xs font-bold hover:bg-orange-50 transition shadow-sm border-b-2 border-orange-200">
+                        <i data-lucide="instagram" class="w-3 h-3"></i> <span>@dapur.lestari</span>
                     </a>
-                    <a href="https://instagram.com/bloomsbaloon" target="_blank" class="flex items-center space-x-2 bg-white/20 text-white px-4 py-2 rounded-full text-xs font-bold hover:bg-white/30 transition backdrop-blur-sm border border-white/30">
-                        <i data-lucide="instagram" class="w-3 h-3"></i> <span>@bloomsbaloon</span>
-                    </a>
+
                 </div>
 
                 <div class="max-w-md mx-auto relative group">
@@ -116,25 +114,25 @@
         <div id="event-planner" class="hidden animate-fade-in">
             <div class="bg-white rounded-3xl shadow-lg border border-orange-100 overflow-hidden">
                 <div class="bg-gradient-to-r from-slate-800 to-slate-900 p-6 text-white text-center">
-                    <i data-lucide="gem" class="w-10 h-10 mx-auto mb-2 text-yellow-400"></i>
-                    <h3 class="text-2xl font-bold mb-1">Wedding & Event Planner</h3>
-                    <p class="text-slate-300 text-sm">Hitung estimasi biaya pestamu dalam hitungan detik.</p>
+                    <i data-lucide="package" class="w-10 h-10 mx-auto mb-2 text-yellow-400"></i>
+                    <h3 class="text-2xl font-bold mb-1">Kalkulator Pesanan</h3>
+                    <p class="text-slate-300 text-sm">Hitung estimasi biaya pesanan cathering, kue, atau jajanan pasar dalam jumlah besar.</p>
                 </div>
                 
                 <div class="p-6 space-y-6">
                     <!-- Step 1: Pax -->
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-2">Jumlah Tamu (Pax)</label>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Jumlah Pesanan (Pax/Porsi)</label>
                         <div class="flex items-center border-2 border-gray-200 rounded-xl overflow-hidden focus-within:border-orange-500 transition-colors">
                             <div class="bg-gray-100 p-3"><i data-lucide="users" class="w-5 h-5 text-gray-500"></i></div>
                             <input type="number" id="event-pax" class="w-full p-3 outline-none font-bold text-gray-800" placeholder="Contoh: 100" min="50" oninput="calculateEvent()">
                         </div>
-                        <p class="text-xs text-gray-400 mt-1">*Min. 50 Pax</p>
+                        <p class="text-xs text-gray-400 mt-1">*Min. 50 Pax/Porsi untuk pesanan dalam jumlah besar</p>
                     </div>
 
                     <!-- Step 2: Package Selection -->
                     <div>
-                        <label class="block text-sm font-bold text-gray-700 mb-3">Pilih Paket Katering</label>
+                        <label class="block text-sm font-bold text-gray-700 mb-3">Pilih Paket Pesanan</label>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                             <!-- Bronze -->
                             <label class="cursor-pointer group">
@@ -195,17 +193,17 @@
                         <div class="space-y-2">
                             <label class="flex items-center justify-between p-3 border rounded-xl hover:bg-gray-50 cursor-pointer">
                                 <div class="flex items-center gap-3">
-                                    <input type="checkbox" id="addon-decor" value="2500000" class="w-5 h-5 text-orange-600 rounded focus:ring-orange-500" onchange="calculateEvent()">
-                                    <span class="text-sm font-medium">Dekorasi Backdrop (Blooms)</span>
+                                    <input type="checkbox" id="addon-decor" value="500000" class="w-5 h-5 text-orange-600 rounded focus:ring-orange-500" onchange="calculateEvent()">
+                                    <span class="text-sm font-medium">Packing Box Eksklusif</span>
                                 </div>
-                                <span class="text-sm font-bold text-gray-600">+2.5 Jt</span>
+                                <span class="text-sm font-bold text-gray-600">+500rb</span>
                             </label>
                             <label class="flex items-center justify-between p-3 border rounded-xl hover:bg-gray-50 cursor-pointer">
                                 <div class="flex items-center gap-3">
-                                    <input type="checkbox" id="addon-mc" value="1500000" class="w-5 h-5 text-orange-600 rounded focus:ring-orange-500" onchange="calculateEvent()">
-                                    <span class="text-sm font-medium">MC & Sound System Simple</span>
+                                    <input type="checkbox" id="addon-mc" value="300000" class="w-5 h-5 text-orange-600 rounded focus:ring-orange-500" onchange="calculateEvent()">
+                                    <span class="text-sm font-medium">Layanan Antar (Delivery)</span>
                                 </div>
-                                <span class="text-sm font-bold text-gray-600">+1.5 Jt</span>
+                                <span class="text-sm font-bold text-gray-600">+300rb</span>
                             </label>
                         </div>
                     </div>
@@ -222,7 +220,7 @@
                             </div>
                         </div>
                         <button onclick="consultEvent()" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i> Konsultasi Ketersediaan Tanggal
+                            <i data-lucide="message-circle" class="w-5 h-5"></i> Konsultasi Pesanan Sekarang
                         </button>
                         <p class="text-[10px] text-center text-gray-500 mt-2">*Harga dapat berubah sesuai request custom.</p>
                     </div>
@@ -632,7 +630,7 @@
                 { id: 'kue', label: 'Kue', icon: 'cookie' },
                 { id: 'jajanan-pasar', label: 'Jajanan Pasar', icon: 'shopping-basket' },
                 { id: 'cathering', label: 'Cathering', icon: 'utensils-crossed' },
-                { id: 'event', label: 'Wedding & Event', icon: 'calendar-heart' }
+                { id: 'event', label: 'Pesanan', icon: 'package' }
             ];
 
             // Tambahkan tab Jumat Berkah jika hari ini adalah hari Jumat
@@ -901,8 +899,8 @@
             }
 
             let addonTotal = 0;
-            if(document.getElementById('addon-decor').checked) addonTotal += 2500000;
-            if(document.getElementById('addon-mc').checked) addonTotal += 1500000;
+            if(document.getElementById('addon-decor').checked) addonTotal += 500000;
+            if(document.getElementById('addon-mc').checked) addonTotal += 300000;
 
             const total = (pax * packagePrice) + addonTotal;
             
@@ -916,11 +914,11 @@
             const summary = document.getElementById('event-summary').textContent;
             
             let addons = [];
-            if(document.getElementById('addon-decor').checked) addons.push("Dekorasi");
-            if(document.getElementById('addon-mc').checked) addons.push("MC & Sound");
+            if(document.getElementById('addon-decor').checked) addons.push("Packing Box Eksklusif");
+            if(document.getElementById('addon-mc').checked) addons.push("Layanan Antar");
             const addonStr = addons.length > 0 ? addons.join(' + ') : 'Tanpa Addon';
 
-            const msg = `Halo Admin Sedayu Hub! 👋\nSaya ingin konsultasi *Paket Wedding/Event*.\n\nDetail Estimasi:\n• Tamu: ${pax} Pax\n• Paket: ${summary.split('•')[1]}\n• Add-on: ${addonStr}\n• Estimasi Budget: ${total}\n\nMohon info ketersediaan tanggal. Terima kasih!`;
+            const msg = `Halo Admin DapurLestari ! 👋\nSaya ingin konsultasi *Pesanan dalam Jumlah Besar* (Cathering/Kue/Jajanan Pasar).\n\nDetail Estimasi:\n• Jumlah: ${pax} Pax/Porsi\n• Paket: ${summary.split('•')[1]}\n• Add-on: ${addonStr}\n• Estimasi Budget: ${total}\n\nMohon info ketersediaan & jadwal pengiriman. Terima kasih!`;
             
             window.open(`https://wa.me/628815630836?text=${encodeURIComponent(msg)}`, '_blank');
         }
