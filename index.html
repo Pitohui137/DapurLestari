@@ -48,8 +48,8 @@
     <nav class="glass shadow-sm sticky top-0 z-40 border-b border-orange-100">
         <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-3">
-                <div class="h-12 w-12 rounded-lg overflow-hidden flex items-center justify-center bg-white shadow-sm border border-orange-50">
-                    <img src="assets/logo/logodpl.png" alt="Logo" class="w-full h-full object-cover p-0">
+                <div class="h-12 w-12 flex items-center justify-center">
+                    <img src="assets/logo/logodpl.png" alt="Logo" class="w-full h-full object-contain">
                 </div>
                 <div>
                     <h1 class="text-xl font-extrabold text-gray-800 leading-tight">Dapur Lestari</h1>
@@ -75,13 +75,12 @@
             </div>
             <div class="relative z-10">
                 <h2 class="text-3xl md:text-4xl font-black mb-3 drop-shadow-md" id="hero-title">Citarasa & Cerita</h2>
-                <p class="text-orange-50 text-sm md:text-base max-w-lg mx-auto mb-6 font-medium" id="hero-subtitle">Dari dapur penuh rempah hingga kue penuh cita rasa. <span class="block mt-1 font-bold text-yellow-200">Solusi Pesanan Cathering, Kue & Jajanan Pasar Jumlah Besar.</span></p>
+                <p class="text-orange-50 text-sm md:text-base max-w-lg mx-auto mb-6 font-medium" id="hero-subtitle">Dari dapur penuh rempah hingga kue yang penuh cita rasa. <span class="block mt-1 font-bold text-yellow-200">Solusi Pesanan Cathering, Kue & Jajanan Pasar Jumlah Besar.</span></p>
                 
                 <div class="flex justify-center gap-3 mb-6 flex-wrap">
                     <a href="https://www.instagram.com/lizlestari?stkn=Z3M4bzduMWNseTZ3" target="_blank" class="flex items-center space-x-2 bg-white text-orange-600 px-4 py-2 rounded-full text-xs font-bold hover:bg-orange-50 transition shadow-sm border-b-2 border-orange-200">
                         <i data-lucide="instagram" class="w-3 h-3"></i> <span>@dapur.lestari</span>
                     </a>
-
                 </div>
 
                 <div class="max-w-md mx-auto relative group">
@@ -271,8 +270,8 @@
     <div id="chat-widget" class="fixed bottom-24 right-4 z-40 w-80 bg-white rounded-2xl shadow-2xl border border-gray-100 hidden flex-col overflow-hidden chat-slide-up origin-bottom-right">
         <div class="bg-[#075E54] p-4 flex justify-between items-center text-white">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center p-0.5">
-                    <img src="assets/logo/logodpl.png" class="w-full h-full rounded-full object-cover">
+                <div class="w-10 h-10 flex items-center justify-center">
+                    <img src="assets/logo/logodpl.png" class="w-full h-full object-contain">
                 </div>
                 <div>
                     <h3 class="font-bold text-sm">Admin Dapur Lestari</h3>
@@ -467,21 +466,6 @@
             "Nasi Ayam PopCorn": 12000
         };
 
-        // DATA BUNDLING PACKAGES / PAKET HEMAT
-        const BUNDLES_DATA = [
-            { id: 'bnd-1', name: 'Paket Hemat Kantor', desc: 'Nasi Ayam Serundeng + Es Teh', price: 20000, regularPrice: 23000, save: '13%', category: 'bundling', stock: 999, 
-              images: ['https://i.ibb.co.com/vv1KPgRN/Poster-Promosi-Menu-Baru-Ceria-Warna-Merah-dan-Kuning-1.png', 'https://i.ibb.co.com/xSfqH8pd/es-teh.jpg'] },
-            { id: 'bnd-2', name: 'Paket Couple', desc: '2x Nasi Ayam + Es Coklat & Es Teh', price: 50000, regularPrice: 58000, save: '14%', category: 'bundling', stock: 999, 
-              images: ['https://i.ibb.co.com/YFG32vnt/Poster-Promosi-Menu-Baru-Ceria-Warna-Merah-dan-Kuning.png', 'https://i.ibb.co.com/vv1KPgRN/Poster-Promosi-Menu-Baru-Ceria-Warna-Merah-dan-Kuning-1.png', 'https://i.ibb.co.com/bgLrVjbH/es-coklat.jpg'] },
-            { id: 'bnd-3', name: 'Paket Nasi + Lauk', desc: 'Nasi Putih + Tempe Penyet + Tahu Cabe Garam', price: 22000, regularPrice: 26000, save: '15%', category: 'bundling', stock: 999, 
-              images: ['https://i.ibb.co.com/TxzPjzFj/2.png', 'https://i.ibb.co.com/758562Q/tahu-cabe-garam.jpg'] },
-            { id: 'bnd-4', name: 'Paket Makan Siang', desc: 'Nasi Ayam Serundeng + Mac Fries + Es Jeruk', price: 45000, regularPrice: 52000, save: '13%', category: 'bundling', stock: 999, 
-              images: ['https://i.ibb.co.com/vv1KPgRN/Poster-Promosi-Menu-Baru-Ceria-Warna-Merah-dan-Kuning-1.png', 'https://i.ibb.co.com/bRr3W44K/Mac-N-Cheese-Fries-18rb.jpg', 'https://i.ibb.co.com/DDFHs0RS/es-jeruk.jpg'] },
-            { id: 'bnd-5', name: 'Healthy Bundle', desc: 'Ayam Laos Sedayu + Tahu Bulat + Es Green Tea', price: 35000, regularPrice: 40000, save: '13%', category: 'bundling', stock: 999, 
-              images: ['https://i.ibb.co.com/Pv4XBzFX/1.png', 'https://i.ibb.co.com/bRXZBqYv/Tahu-bulat-Spicy-12rb.jpg', 'https://i.ibb.co.com/xSMR02Wj/es-mathca.jpg'] }
-        ];
-        // Ganti isi array di atas kalau mau ubah/tambah paket hemat -- cari "PAKET HEMAT" di kodenya.
-
         // CATATAN: Menu Kue, Jajanan Pasar, dan Cathering TIDAK dihardcode -- diambil
         // dari Google Sheet lewat GOOGLE_SCRIPT_URL di atas (kolom category diisi:
         // kue / jajanan-pasar / cathering). Kategori Kuliner/Minuman/Balon/Bucket
@@ -626,7 +610,6 @@
         function renderTabs() {
             const tabs = [
                 { id: 'all', label: 'Semua', icon: '' },
-                { id: 'bundling', label: 'Paket Hemat', icon: 'package-plus' },
                 { id: 'kue', label: 'Kue', icon: 'cookie' },
                 { id: 'jajanan-pasar', label: 'Jajanan Pasar', icon: 'shopping-basket' },
                 { id: 'cathering', label: 'Cathering', icon: 'utensils-crossed' },
@@ -651,7 +634,6 @@
         }
 
         function getTabColor(category) {
-            if (category === 'bundling') return 'bg-purple-600 text-white border-purple-600 shadow-md shadow-purple-200';
             if (category === 'kue') return 'bg-yellow-500 text-white border-yellow-500 shadow-md shadow-yellow-200';
             if (category === 'jajanan-pasar') return 'bg-lime-600 text-white border-lime-600 shadow-md shadow-lime-200';
             if (category === 'cathering') return 'bg-red-700 text-white border-red-700 shadow-md shadow-red-200';
@@ -697,8 +679,8 @@
                 eventPlanner.classList.add('hidden');
             }
 
-            // Gabungkan produk dari Google Sheet (Kue/Jajanan Pasar/Cathering) + Paket Hemat
-            const allItems = [...products, ...BUNDLES_DATA];
+            // Produk dari Google Sheet (Kue/Jajanan Pasar/Cathering)
+            const allItems = [...products];
 
             // Kategori lama yang sudah tidak dipakai lagi di situs ini
             const RETIRED_CATEGORIES = ['kuliner', 'minuman', 'balon', 'bucket'];
@@ -774,16 +756,15 @@
                 
                 let bgClass = (!isUrl && !hasMultipleImages && product.image && product.image.includes('bg-')) ? product.image : 'bg-gray-100';
                 if (!product.image && !hasMultipleImages) {
-                     if (product.category === 'bundling') bgClass = 'bg-purple-100';
-                     else if (product.category === 'kue') bgClass = 'bg-yellow-100';
+                     if (product.category === 'kue') bgClass = 'bg-yellow-100';
                      else if (product.category === 'jajanan-pasar') bgClass = 'bg-lime-100';
                      else if (product.category === 'cathering') bgClass = 'bg-red-100';
                      else bgClass = 'bg-blue-100';
                 }
 
                 // Ikon Placeholder
-                const icon = product.category === 'bundling' ? 'package-plus' : product.category === 'kue' ? 'cookie' : product.category === 'jajanan-pasar' ? 'shopping-basket' : product.category === 'cathering' ? 'utensils-crossed' : 'gift';
-                const iconColor = product.category === 'bundling' ? 'text-purple-500' : product.category === 'kue' ? 'text-yellow-600' : product.category === 'jajanan-pasar' ? 'text-lime-600' : product.category === 'cathering' ? 'text-red-700' : 'text-blue-500';
+                const icon = product.category === 'kue' ? 'cookie' : product.category === 'jajanan-pasar' ? 'shopping-basket' : product.category === 'cathering' ? 'utensils-crossed' : 'gift';
+                const iconColor = product.category === 'kue' ? 'text-yellow-600' : product.category === 'jajanan-pasar' ? 'text-lime-600' : product.category === 'cathering' ? 'text-red-700' : 'text-blue-500';
                 const iconSize = isCompact ? 'w-5 h-5' : 'w-8 h-8';
                 const pIcon = isCompact ? 'p-2' : 'p-4';
 
@@ -791,10 +772,8 @@
                 const isSoldOut = currentStock <= 0;
                 const isDisabled = isSoldOut || !storeOpen;
 
-                const isBundle = product.category === 'bundling';
-
-                // Cek Status Promo Jumat Berkah (Hanya untuk non-bundle)
-                const promoPrice = isBundle ? null : getPromoPrice(product.name);
+                // Cek Status Promo Jumat Berkah
+                const promoPrice = getPromoPrice(product.name);
                 const isPromoActive = promoPrice !== null;
                 const displayPrice = isPromoActive ? promoPrice : product.price;
 
@@ -918,7 +897,7 @@
             if(document.getElementById('addon-mc').checked) addons.push("Layanan Antar");
             const addonStr = addons.length > 0 ? addons.join(' + ') : 'Tanpa Addon';
 
-            const msg = `Halo Admin DapurLestari ! 👋\nSaya ingin konsultasi *Pesanan dalam Jumlah Besar* (Cathering/Kue/Jajanan Pasar).\n\nDetail Estimasi:\n• Jumlah: ${pax} Pax/Porsi\n• Paket: ${summary.split('•')[1]}\n• Add-on: ${addonStr}\n• Estimasi Budget: ${total}\n\nMohon info ketersediaan & jadwal pengiriman. Terima kasih!`;
+            const msg = `Halo Admin Sedayu Hub! 👋\nSaya ingin konsultasi *Pesanan dalam Jumlah Besar* (Cathering/Kue/Jajanan Pasar).\n\nDetail Estimasi:\n• Jumlah: ${pax} Pax/Porsi\n• Paket: ${summary.split('•')[1]}\n• Add-on: ${addonStr}\n• Estimasi Budget: ${total}\n\nMohon info ketersediaan & jadwal pengiriman. Terima kasih!`;
             
             window.open(`https://wa.me/628815630836?text=${encodeURIComponent(msg)}`, '_blank');
         }
